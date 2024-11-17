@@ -1,5 +1,6 @@
+//Função chamada ao clicar no botão Enviar
 function checkAnswers() {
-    //Guarda as respostas (Gabarito)
+    //Objeto que mapeia as perguntas ás respostas corretas (Gabarito)
     const answers = {
       q1: "c",
       q2: "b",
@@ -13,15 +14,15 @@ function checkAnswers() {
       q10: "a",
     };
 
-    //Obtém as respostas selecionadas
-    let score = 0;
-    const form = document.getElementById("quiz-form");
-    const result = document.getElementById("result");
+    
+    let score = 0; // Contador de respostas corretas
+    const form = document.getElementById("quiz-form"); //Obtém o HTML
+    const result = document.getElementById("result"); 
 
-    //Faz a contagem de acertos e erros
+    //Percorre as questões (q1 ao q10)
     for (const question in answers) {
-      const userAnswer = form[question].value;
-      if (userAnswer === answers[question]) {
+      const userAnswer = form[question].value; //Obtém a resposta selecionada pelo usuário
+      if (userAnswer === answers[question]) { // Verifica se a resposta selecionada é a correta
         score++;
       }
     }
