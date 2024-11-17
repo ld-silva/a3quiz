@@ -7,15 +7,22 @@
   <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+  <!-- Um container central pra agrupar todo o conteúdo do quiz -->
   <div class="quiz-container">
+    <!--Título do quiz -->
     <h1>Quiz Interativo</h1>
+    <!-- Define o formulário com a ID "quiz-form" -->
     <form id="quiz-form">
+      <!-- Cada pergunta é envolvida com este elemento -->
       <div class="question">
+        <!-- Exibe o texto da pergunta-->
         <p>1. Qual é a capital do Brasil?</p>
+        <!-- Agrupa a entrada (<input>) e o texto das alternativas -->
         <label>
           <input type="radio" name="q1" value="a"> São Paulo
         </label>
         <label>
+          <!-- Um botão do tipo radio-->
           <input type="radio" name="q1" value="b"> Rio de Janeiro
         </label>
         <label>
@@ -138,10 +145,15 @@
           <input type="radio" name="q10" value="c">  NaCl
         </label>
       </div>
+
+      <!-- Botão que, ao ser clicado executa a função checkAnswers() do JS -->
       <button type="button" onclick="checkAnswers()">Enviar</button>
     </form>
+    <!-- Onde o resultado será exibido-->
     <div id="result" class="result"></div>
   </div>
+
+  <!--Importa o JS-->
   <script src="script.js"></script>
 </body>
 </html>
