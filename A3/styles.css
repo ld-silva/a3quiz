@@ -1,3 +1,4 @@
+/* Definindo fonte, cor de fundo e centralizando o conteúdo na página */
 body {
     font-family: Arial, sans-serif;
     background-color: #f4f4f4;
@@ -10,7 +11,7 @@ body {
   }
   
 
-
+/* Adicionando estilo ao container do quiz: fundo branco, bordas arredondadas e sombra */
   .quiz-container {
     background-color: #ffffff;
     padding: 20px;
@@ -20,7 +21,8 @@ body {
     max-width: 500px;
     
   }
-  
+
+/* Centralizando textos ao meio e definindo margens abaixo */
   h1 {
     text-align: center;
     margin-bottom: 20px;
@@ -34,7 +36,8 @@ body {
     display: block;
     margin-bottom: 5px;
   }
-  
+
+/* Definindo um botão verde com bordas arredondadas e um efeito hover  ao passar o mouse */
   button {
     background-color: #4caf50;
     color: white;
